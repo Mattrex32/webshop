@@ -1,3 +1,11 @@
+<?php
+require '../functions.php';
+$connection = dbConnect();
+
+$result = $connection->query('SELECT * FROM `kleding` WHERE `categorie` = "Short" AND `soort` = "Shorts" ORDER BY `id` ASC'); 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,207 +13,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/keuzes.css">
-    <link rel="stylesheet" href="/css/shorts.css">
+    <link rel="stylesheet" href="../css/keuzes.css">
+    <link rel="stylesheet" href="../stylly.css">
     
     
 </head>
 <body>
     <header>
         <nav>
-            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
+            <a href="../homepage.php"><img class="logoweb" src="../imgs/logo2.png" alt=""></a>
         </nav>
     </header>
 
     <main class="mainshorts1">
+    <?php foreach($result as $producten): ?>
         <article class="b1">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
+            <img class="fotoo" src="../imgs/<?php echo $producten['foto']; ?>" alt="">
             <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-           
+            <p> <?php echo $producten['prijs']; ?>  <br><br> <?php echo $producten['titel']; ?> <br><br> <?php echo $producten['beschrijving']; ?> </p>  
         </article>
-
-        <article class="b2">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b3">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b4">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b5">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b6">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b7">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b8">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b9">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b10">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-    </main>
-
-    <main class="mainshorts2">
-        <article class="b1">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-           
-        </article>
-
-        <article class="b2">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b3">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b4">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b5">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b6">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b7">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b8">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b9">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b10">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-    </main>
-
-
-
-    <main class="mainshorts3">
-        <article class="b1">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-           
-        </article>
-
-        <article class="b2">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b3">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b4">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b5">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b6">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b7">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b8">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-
-        <article class="b9">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
-        
-        <article class="b10">
-            <img src="/imgs/short articlen.jpeg" alt="" srcset="">
-            <button>add</button>
-            <p> €10,46 <br><br> zwart kleur <br> XL</p>  
-        </article>
+        <?php endforeach; ?>
 
     </main>
 </body>

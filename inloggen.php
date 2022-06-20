@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/inloggen.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/inloggen.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
   <!-- logo -->
-  <a href="/html/inloggen.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
+  <a href="inloggen.php"><img class="logoweb" src="imgs/logo2.png" alt=""></a>
   <!-- einde logo -->
 
 <main>
@@ -33,7 +33,7 @@
           <!-- einde password -->
         </article>
         <article class="onderknoppen">
-        <button type="submit" class="button-login"> <a href="/html/homepage.php" class="button-loginn"> submit </a></button>
+        <button type="submit" class="button-login"> <a href="homepage.php" class="button-loginn"> submit </a></button>
         <li class="horizontal-line"></li>
         <button class="register-button">
           <a class="register-link" href="register.php">Click here to Register</a>

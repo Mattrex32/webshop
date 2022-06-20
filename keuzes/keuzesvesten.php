@@ -1,3 +1,11 @@
+<?php
+require '../functions.php';
+$connection = dbConnect();
+
+$result = $connection->query('SELECT * FROM `kleding` WHERE `categorie` = "T shirt" AND `soort` LIKE "Tshirts" ORDER BY `soort` ASC'); 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,149 +13,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/keuzes.css">
-    <link rel="stylesheet" href="/css/vesten.css">
+    <link rel="stylesheet" href="../css/keuzes.css">
+    <link rel="stylesheet" href="../stylly.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li class="active"><a href="/html/homepage.php">Home</a></li>
-                <li><a href="/html/aanbiedingen.php">aanbiedingen</a></li>
-                <li><a href="/html/about.php">About</a></li>
-                <li><a href="/html/homepage.html#klantcontact">klantenservice</a></li>
-                <li><a href="/html/winkelwagen.php"><img src="/imgs/winkelwagen.png" alt="" height="40rem"></a></li>
-            </ul>
-            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
+            <a href="../homepage.php"><img class="logoweb" src="../imgs/logo2.png" alt=""></a>
         </nav>
     </header>
+    
     <main class="mainvesten1">
+    <?php foreach($result as $producten): ?>
         <article class="b1">
-
+            <img class="fotoo" src="../imgs/<?php echo $producten['foto']; ?>" alt="">
+            <button>add</button>
+            <p> <?php echo $producten['prijs']; ?>  <br><br> <?php echo $producten['titel']; ?> <br><br> <?php echo $producten['beschrijving']; ?> </p>  
         </article>
-
-        <article class="b2">
-            
-        </article>
-
-        <article class="b3">
-            
-        </article>
-
-        <article class="b4">
-            
-        </article>
-
-        <article class="b5">
-            
-        </article>
-        
-        <article class="b6">
-
-        </article>
-
-        <article class="b7">
-            
-        </article>
-
-        <article class="b8">
-            
-        </article>
-
-        <article class="b9">
-            
-        </article>
-        
-        <article class="b10">
-            
-        </article>
-    </main>
-
-    <main class="mainvesten2">
-        <article class="b1">
-
-        </article>
-
-        <article class="b2">
-            
-        </article>
-
-        <article class="b3">
-            
-        </article>
-
-        <article class="b4">
-            
-        </article>
-
-        <article class="b5">
-            
-        </article>
-        
-        <article class="b6">
-
-        </article>
-
-        <article class="b7">
-            
-        </article>
-
-        <article class="b8">
-            
-        </article>
-
-        <article class="b9">
-            
-        </article>
-        
-        <article class="b10">
-            
-        </article>
-    </main>
-
-
-
-    <main class="mainvesten3">
-        <article class="b1">
-
-        </article>
-
-        <article class="b2">
-            
-        </article>
-
-        <article class="b3">
-            
-        </article>
-
-        <article class="b4">
-            
-        </article>
-
-        <article class="b5">
-            
-        </article>
-        
-        <article class="b6">
-
-        </article>
-
-        <article class="b7">
-            
-        </article>
-
-        <article class="b8">
-            
-        </article>
-
-        <article class="b9">
-            
-        </article>
-        
-        <article class="b10">
-            
-        </article>
-
+        <?php endforeach; ?>
+   
     </main>
 </body>
 </html>

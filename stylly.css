@@ -7,10 +7,12 @@ html{
     font-size: 62.5%;
 }
 body{
- font-size: 2rem;
- flex-direction: row;
- padding: 2rem;
- 
+    max-height: 100vh;
+    font-size: 2rem;
+    flex-direction: row;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    
  
 }
 
@@ -19,20 +21,40 @@ body{
     justify-content: center;
     align-items: center;
     max-width: 200vh;
+   flex-wrap: wrap;   
+}
+
+.mainvesten1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200vh;
    flex-wrap: wrap;
-    
-    
+}
+
+.mainshorts1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200vh;
+   flex-wrap: wrap;
+}
+
+.mainbroeken1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200vh;
+   flex-wrap: wrap;
 }
 
 article{
     gap: 2rem;
     position: relative;
     margin: 2rem;
-    display: flex;
-    
-    
-    
+    display: flex;    
 }
+
 .b1{
     display: flex;
     justify-content: center;
@@ -42,6 +64,8 @@ article{
     box-shadow: 0.3rem 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 2rem;
+    margin-bottom: 4rem;
+    
     
 }
 .b1>button{
@@ -63,10 +87,23 @@ p{
 .fotoo{
     width: 100%;
     height: 40%;
-    object-fit: cover;
+    object-fit: fill;
     display: flex;
     justify-content: center;
     border-top-left-radius: 2rem;
-    border-top-right-radius:2rem ;
+    border-top-right-radius:2rem;
 
 }
+
+.mainshorts1>.b1>.fotoo{
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius:2rem;
+
+}
+

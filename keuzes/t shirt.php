@@ -1,8 +1,9 @@
 <?php
-require 'functions.php';
+require '../functions.php';
 $connection = dbConnect();
 
-$result = $connection->query(' SELECT * FROM `kleding`'); 
+$result = $connection->query('SELECT * FROM `kleding` WHERE `categorie` = "T shirt" AND `soort` LIKE "Tshirts" ORDER BY `soort` ASC
+'); 
 
 ?>
 
@@ -13,21 +14,20 @@ $result = $connection->query(' SELECT * FROM `kleding`');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="keuzes.css">
-    <link rel="stylesheet" href="stylly.css">
+    <link rel="stylesheet" href="../css/keuzes.css">
+    <link rel="stylesheet" href="../stylly.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="../html/homepage.php"><img class="logoweb" src="imgs/logo2.png" alt=""></a>
+            <a href="../homepage.php"><img class="logoweb" src="../imgs/logo2.png" alt=""></a>
         </nav>
     </header>
     <main class="maintshirts1">
 
-
     <?php foreach($result as $producten): ?>
         <article class="b1">
-            <img class="fotoo" src="imgs/<?php echo $producten['foto']; ?>" alt="">
+            <img class="fotoo" src="../imgs/<?php echo $producten['foto']; ?>" alt="">
             <button>add</button>
             <p> <?php echo $producten['prijs']; ?>  <br><br> <?php echo $producten['titel']; ?> <br><br> <?php echo $producten['beschrijving']; ?> </p>  
         </article>
@@ -39,15 +39,6 @@ $result = $connection->query(' SELECT * FROM `kleding`');
 
 
         
-    </main>
-    <main>
-        <?php foreach($result as $producten): ?>
-            <article class="b1">
-                <img class="fotoo" src="../imgs/<?php echo $producten['foto']; ?>" alt="">
-                <button>add</button>
-                <p> <?php echo $producten['prijs']; ?>  <br><br> <?php echo $producten['titel']; ?> <br><br> <?php echo $producten['beschrijving']; ?> </p>  
-            </article>
-            <?php endforeach; ?>
     </main>
 </body>
 </html>

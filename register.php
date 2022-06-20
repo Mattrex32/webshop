@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/register.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <a href="/html/inloggen.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
+  <a href="inloggen.php"><img class="logoweb" src="imgs/logo2.png" alt=""></a>
   <main class="mainregisteren">
     v
     <li class="horizontal-line-register"></li>
@@ -44,10 +44,10 @@
         <!-- einde password -->
       </article>
       <button class="login-button-kanaal">
-        <a class="register-link-a" href="/html/inloggen.php">Click here to Login</a>
+        <a class="register-link-a" href="inloggen.php">Click here to Login</a>
       </button>
       <button type="submit" class="button-login">
-        <a href="/html/inloggen.php" class="button-loginn"> submit</a>
+        <a href="inloggen.php" class="button-loginn"> submit</a>
       </button>
     </form>
   </main>

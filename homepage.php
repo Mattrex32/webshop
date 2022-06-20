@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/homepage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage.css">
 
 
 </head>
@@ -16,14 +16,14 @@
     <header>
         <nav>
             <ul>
-                <li class="active"><a href="/html/homepage.php">Home</a></li>
-                <li><a href="/html/aanbiedingen.php">aanbiedingen</a></li>
-                <li><a href="/html/about.php">About</a></li>
-                <li><a href="/html/homepage.html#klantcontact">klantenservice</a></li>
-                <li><a href="/html/winkelwagen.php"><img src="/imgs/winkelwagen.png" alt="" height="40rem"></a></li>
+                <li class="active"><a href="homepage.php">Home</a></li>
+                <li><a href="aanbiedingen.php">aanbiedingen</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="homepage.php#klantcontact">klantenservice</a></li>
+                <li><a href="winkelwagen.php"><img src="imgs/winkelwagen.png" alt="" height="40rem"></a></li>
             </ul>
-            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>'
-            <a href="/html/inloggen.php"><img class="inloglogo" src="/imgs/user.png" alt=""></a>
+            <a href="homepage.php"><img class="logoweb" src="imgs/logo2.png" alt=""></a>'
+            <a href="inloggen.php"><img class="inloglogo" src="imgs/user.png" alt=""></a>
         </nav>
     </header>
 
@@ -31,39 +31,39 @@
 
     <main class="main3imgs">
         <article class="img1">
-            <img src="/imgs/pexels-jacub-gomez-1142948.jpg" alt="">
+            <img src="imgs/pexels-jacub-gomez-1142948.jpg" alt="">
         </article>
         <article class="img2">
-            <img src="/imgs/pexels-amin-imanifar-865773.jpg" alt="">
+            <img src="imgs/pexels-amin-imanifar-865773.jpg" alt="">
         </article>
         <article class="img3">
-            <img src="/imgs/pexels-nikolai-ulltang-572463.jpg" alt="">
+            <img src="imgs/pexels-nikolai-ulltang-572463.jpg" alt="">
         </article>
         
     </main>
     <main class="mainkeuzes">
         <article class="keuzentshirts">
             <p>T shirts</p>
-            <a href="/keuzes/t shirt.php">
-                <img src="/imgs/keuzes t shirts2.jpg" alt="">
+            <a href="keuzes/t shirt.php">
+                <img src="imgs/keuzes t shirts2.jpg" alt="">
             </a>
         </article>
         <article class="keuzentshorts">
             <p>Shorts</p>
-            <a href="/keuzes/shorts.php">
-                <img src="/imgs/shorts keuzen.jpg" alt="">
+            <a href="keuzes/shorts.php">
+                <img src="imgs/shorts keuzen.jpg" alt="">
             </a>
         </article>
         <article class="keuzenbroeken">
-            <p> Broeken</p>
-            <a href="/keuzes/broeken.php">
-                <img src="/imgs/broekkeuzen.jpg" alt="">
+            <p> broeken</p>
+            <a href="keuzes/broeken.php">
+                <img src="imgs/broekkeuzen.jpg" alt="">
             </a>
         </article>
         <article class="keuzenvesten">
             <p>Sweaters</p>
-            <a href="/keuzes/keuzesvesten.php">
-                <img src="/imgs/sweater keuzes.jpg" alt="">
+            <a href="keuzes/keuzesvesten.php">
+                <img src="imgs/sweater keuzes.jpg" alt="">
             </a>
         </article>
     </main>
@@ -75,7 +75,7 @@
                 <p>infothebestAr@thebest.nl</p>
             </div>
 
-            <img src="/imgs/email logo.png" alt="">
+            <img src="imgs/email logo.png" alt="">
 
             <div class="twee">
                 <p>080 5722 73</p>
@@ -89,10 +89,10 @@
                 <i class="fab fa-facebook"></i></a>
             </ul>
         <section class="footer3">
-           <a href="https://www.facebook.com"><img src="/imgs/facebooklogo.webp" alt="" height="40rem"></a> 
+           <a href="https://www.facebook.com"><img src="imgs/facebooklogo.webp" alt="" height="40rem"></a> 
         </section>
         <section class="footer4">
-            <a href="https://www.snapchat.com/"><img src="/imgs/snapchatlogo.jpeg" alt=""></a>
+            <a href="https://www.snapchat.com/"><img src="imgs/snapchatlogo.jpeg" alt=""></a>
         </section>
     </footer>
 
