@@ -2,6 +2,9 @@ article{
     border-radius: 1rem;
     box-shadow: 3px 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+body{
+    position: relative;
+}
 
 .mainshorts1{
     display: grid;
@@ -11,8 +14,35 @@ article{
     gap: 2rem;
     padding: 4rem;
     padding-bottom: 1rem;
-    padding-top: 0;
+    padding-top: 8rem;
+    position: relative;
 }
+img{
+    padding-top: 1rem;
+    width: 12rem;
+    height: 15rem;
+    position: relative;
+    left: 8rem;
+    top: 1rem;
+    border-radius: 0.5rem;
+}
+button{
+    width: 6rem;
+    height: 4rem;
+    font-size: 2rem;
+    position: relative;
+    top: 10rem;
+    left: 8rem;
+    background-color: rgb(0, 218, 242);
+    border-radius: 1rem;
+}
+p{
+    padding-top: -1rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+}
+
 .mainshorts1>.b1{
     grid-column: 1/4;
     grid-row: 1/5;
@@ -75,6 +105,7 @@ article{
     padding: 4rem;
     padding-bottom: 1rem;
     padding-top: 0;
+    position: relative;
 }
 .mainshorts2>.b1{
     grid-column: 1/4;
@@ -141,6 +172,7 @@ article{
     padding: 4rem;
     padding-bottom: 1rem;
     padding-top: 0;
+    position: relative;
 }
 .mainshorts3>.b1{
     grid-column: 1/4;

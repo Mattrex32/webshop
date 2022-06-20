@@ -72,10 +72,16 @@ body{
 .mainkeuzes>article{
     padding-top: 2rem;
 }
+.mainkeuzes>article>p{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
 .mainkeuzes>.keuzentshirts{
     grid-column: 1/4;
     grid-row: 1/2;
 }
+
 .mainkeuzes>.keuzentshirts>a>img{
     width: 100%;
     height: 80%;

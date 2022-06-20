@@ -13,11 +13,13 @@
         <nav>
             <ul>
                     <li><a href="/html/homepage.html">Home</a></li>
-                    <li class="active"><a href="/html/aanbiedingen.html">aanbiedingen</a></li>
-                    <li><a href="/html/about.html">About</a></li>
-                    <li><a href="/html/klantenservice.html">klantenservice</a></li>
-                    <li><a href="/html/winkelwagen.html">winkelwagen</a></li>
+                    <li class="active"><a href="/html/aanbiedingen.php">aanbiedingen</a></li>
+                    <li><a href="/html/about.php">About</a></li>
+                    <li><a href="/html/homepage.html#klantcontact">klantenservice</a></li>
+                    <li><a href="/html/winkelwagen.php"><img src="/imgs/winkelwagen.png" alt="" height="40rem"></a></li>
             </ul>
+            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
+            <a href="/html/inloggen.php"><img class="inloglogo" src="/imgs/user.png" alt=""></a>
         </nav>
     </header>
     <main>

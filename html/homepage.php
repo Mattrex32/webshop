@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homepage.css">
 
 
 </head>
@@ -16,12 +16,14 @@
     <header>
         <nav>
             <ul>
-                <li class="active"><a href="/html/homepage.html">Home</a></li>
-                <li><a href="/html/aanbiedingen.html">aanbiedingen</a></li>
-                <li><a href="/html/about.html">About</a></li>
-                <li><a href="/html/klantenservice.html">klantenservice</a></li>
-                <li><a href="/html/winkelwagen.html">winkelwagen</a></li>
+                <li class="active"><a href="/html/homepage.php">Home</a></li>
+                <li><a href="/html/aanbiedingen.php">aanbiedingen</a></li>
+                <li><a href="/html/about.php">About</a></li>
+                <li><a href="/html/homepage.html#klantcontact">klantenservice</a></li>
+                <li><a href="/html/winkelwagen.php"><img src="/imgs/winkelwagen.png" alt="" height="40rem"></a></li>
             </ul>
+            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>'
+            <a href="/html/inloggen.php"><img class="inloglogo" src="/imgs/user.png" alt=""></a>
         </nav>
     </header>
 
@@ -37,54 +39,60 @@
         <article class="img3">
             <img src="/imgs/pexels-nikolai-ulltang-572463.jpg" alt="">
         </article>
+        
     </main>
     <main class="mainkeuzes">
         <article class="keuzentshirts">
-            <a href="/keuzes/t shirts.html">
+            <p>T shirts</p>
+            <a href="/keuzes/t shirt.php">
                 <img src="/imgs/keuzes t shirts2.jpg" alt="">
             </a>
         </article>
         <article class="keuzentshorts">
-            <a href="/keuzes/shorts.html">
+            <p>Shorts</p>
+            <a href="/keuzes/shorts.php">
                 <img src="/imgs/shorts keuzen.jpg" alt="">
             </a>
         </article>
         <article class="keuzenbroeken">
-            <a href="/keuzes/broeken.html">
+            <p> Broeken</p>
+            <a href="/keuzes/broeken.php">
                 <img src="/imgs/broekkeuzen.jpg" alt="">
             </a>
         </article>
         <article class="keuzenvesten">
-            <a href="/keuzes/keuzesvesten.html">
+            <p>Sweaters</p>
+            <a href="/keuzes/keuzesvesten.php">
                 <img src="/imgs/sweater keuzes.jpg" alt="">
             </a>
         </article>
     </main>
     <footer>
-        <section class="footer1">
+        <section class="footer1" id="klantcontact">
             <div>
                 <h2>Contact</h2>
                 <br>
-                <p>adnanrajeh2003@gmail.com</p>
+                <p>infothebestAr@thebest.nl</p>
             </div>
 
             <img src="/imgs/email logo.png" alt="">
 
             <div class="twee">
-                <p>+31 683251733</p>
+                <p>080 5722 73</p>
             </div>
 
 
             
         </section>
-        <section class="footer2">
-
-        </section>
+        <ul class="footer2">
+            <a href="#" style="color: lawngreen;">
+                <i class="fab fa-facebook"></i></a>
+            </ul>
         <section class="footer3">
-
+           <a href="https://www.facebook.com"><img src="/imgs/facebooklogo.webp" alt="" height="40rem"></a> 
         </section>
         <section class="footer4">
-
+            <a href="https://www.snapchat.com/"><img src="/imgs/snapchatlogo.jpeg" alt=""></a>
         </section>
     </footer>
 

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,21 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/keuzes.css">
-    <link rel="stylesheet" href="/css/vesten.css">
+    <link rel="stylesheet" href="/css/broeken.css">
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                    <li><a href="/html/homepage.html">Home</a></li>
-                    <li><a href="/html/aanbiedingen.html">aanbiedingen</a></li>
-                    <li><a href="/html/about.html">About</a></li>
-                    <li><a href="/html/klantenservice.html">klantenservice</a></li>
-                    <li><a href="/html/winkelwagen.html">winkelwagen</a></li>
+                <li class="active"><a href="/html/homepage.php">Home</a></li>
+                <li><a href="/html/aanbiedingen.php">aanbiedingen</a></li>
+                <li><a href="/html/about.php">About</a></li>
+                <li><a href="/html/homepage.html#klantcontact">klantenservice</a></li>
+                <li><a href="/html/winkelwagen.php"><img src="/imgs/winkelwagen.png" alt="" height="40rem"></a></li>
             </ul>
+            <a href="/html/homepage.php"><img class="logoweb" src="/imgs/logo2.png" alt=""></a>
         </nav>
     </header>
-    <main class="mainvesten1">
+    <main class="mainbroeken1">
         <article class="b1">
 
         </article>
@@ -62,7 +66,7 @@
         </article>
     </main>
 
-    <main class="mainvesten2">
+    <main class="mainbroeken2">
         <article class="b1">
 
         </article>
@@ -106,7 +110,7 @@
 
 
 
-    <main class="mainvesten3">
+    <main class="mainbroeken3">
         <article class="b1">
 
         </article>

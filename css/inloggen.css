@@ -1,0 +1,64 @@
+html{
+    font-size: 62.5%;
+}
+main{
+    padding-top: 16rem;
+}
+
+h1{
+    font-size: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-login{
+    font-size: 2rem;
+    border-color: green;
+}
+
+
+.li-login{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.showpassword{
+    font-size: 2rem;
+    list-style: none;
+    position: relative;
+    left: 50%;
+}
+.onderknoppen{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.onderknoppen>.button-login{
+    font-size: 2.5rem;
+    list-style: none;
+    background-color: rgb(154, 225, 49);
+    grid-column: 8/9;
+    grid-row: 2/3;
+}
+.onderknoppen>.register-button{
+    font-size: 2.5rem;
+    list-style: none;
+    grid-column: 5/7;
+    grid-row: 2/3;
+    
+}
+
+
+.register-link, .register-link:visited{
+    color:black;
+    text-decoration: none;
+}
+.button-loginn, .button-loginn:visited{
+    color:black;
+    text-decoration: none;
+}

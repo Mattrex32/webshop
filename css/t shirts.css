@@ -4,17 +4,37 @@ article{
 }
 
 .maintshirts1{
-    display: grid;
-    grid-template-columns: repeat(15,1fr);
-    grid-template-rows: repeat(8,1fr);
-    height: 65rem;
-    gap: 2rem;
-    padding: 4rem;
-    padding-bottom: 1rem;
+    display: flex;
 }
-.maintshirts1>.b1{
-    grid-column: 1/4;
-    grid-row: 1/5;
+img{
+    padding-top: 1rem;
+    width: 20rem;
+    height: 15rem;
+    position: relative;
+    left: 3.5rem;
+    top: 1rem;
+    border-radius: 0.5rem;
+}
+button{
+    width: 6rem;
+    height: 4rem;
+    font-size: 2rem;
+    position: relative;
+    top: 10rem;
+    left: 0rem;
+    background-color: rgb(0, 218, 242);
+    border-radius: 1rem;
+}
+p{
+    padding-top: -1rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+}
+
+.maintshirts1 .b1{
+    display: flex;
+    padding: 2rem;
 
 }
 
@@ -78,6 +98,7 @@ article{
     padding: 4rem;
     padding-bottom: 1rem;
     padding-top: 0;
+    position: relative;
 }
 .maintshirts2>.b1{
     grid-column: 1/4;
@@ -144,6 +165,7 @@ article{
     padding: 4rem;
     padding-bottom: 1rem;
     padding-top: 0;
+    position: relative;
 }
 .maintshirts3>.b1{
     grid-column: 1/4;

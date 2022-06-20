@@ -19,7 +19,26 @@ main{
 header{
     height: 4rem;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: white;
+}
+.logoweb{
+    height: 5rem;
+    position: absolute;
+    top: 0rem;
+    left: 80%;
+}
+
+.logoweb:hover{
+    transform: scale(1.1);
+}
+.inloglogo{
+    height: 5rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 93.5%;
+}
+.inloglogo:hover{
+    transform: scale(1.1);
 }
 
 nav{
@@ -28,18 +47,34 @@ nav{
     margin: 0;
 }
 
+
+
+
 nav>ul{
     font-size: 3.3rem;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
+    list-style: none;
 }
+
+nav > ul > li{
+    padding-left: 4rem;
+}
+
+
+nav > ul > li:hover{
+    transform: scale(1.2);
+}
+
+
 nav > ul > li > a:visited, nav > ul > li > a:link{
     color: black;
     text-decoration: none;
 }
 nav>ul>.active{
     background-color: aqua;
+    margin-left: 4rem;
 }
 footer{
     margin-top: 15%;
@@ -77,9 +112,17 @@ footer{
     margin-top: 10%;
 }
 .footer1>.twee>p{
-
     padding-top: 1rem;
     grid-template-columns: 1;
     grid-template-rows: 2;
 }
 
+.footer2>a>img{
+    height: 10rem;
+}
+.footer3>a>img{
+    height: 10rem;
+}
+.footer4>a>img{
+    height: 10rem;
+}
